@@ -140,6 +140,10 @@ namespace CPPKConverter
                             {
                                 cacheAr[0] = cacheAr[0].Substring(1, cacheAr[0].Length-1);
                             }
+                            if (list[list.Count - 1][list[list.Count - 1].Length-1] == '\n' || list[list.Count - 1][list[list.Count - 1].Length - 1] == '\r')
+                            {
+                                list[list.Count - 1] = list[list.Count - 1].Substring(0, list[list.Count - 1].Length - 2);
+                            }
                             list[list.Count - 1] += ".\n" + cacheAr[0];
                         }
                     }
