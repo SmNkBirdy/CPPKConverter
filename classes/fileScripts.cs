@@ -134,7 +134,14 @@ namespace CPPKConverter
                                 cacheAr[0] = cacheAr[0].Substring(1, cacheAr[0].Length - 1);
                             }
                         }
-                        list[list.Count - 1] += ".\n" + cacheAr[0];
+                        if (cacheAr[0].Length > 1)
+                        {
+                            if (cacheAr[0][0] == ' ')
+                            {
+                                cacheAr[0] = cacheAr[0].Substring(1, cacheAr[0].Length-1);
+                            }
+                            list[list.Count - 1] += ".\n" + cacheAr[0];
+                        }
                     }
                 }
             }
