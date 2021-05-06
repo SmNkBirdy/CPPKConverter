@@ -299,7 +299,7 @@ namespace CPPKConverter
                 }
                 else
                 {
-                    newText += "####" + list[i] + "\n}\n";
+                    newText += "####" + list[i] + "\n}\n\n";
                     reWriteState = 0;
                 }
             }
